@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#F#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "F": {
+            "item": "minecraft:fletching_table"
+        }
+    },
+    "result": {
+        "item": "minecraft:spawner",
+        "count": 1
+    },
+    "group": "uhc"
+}

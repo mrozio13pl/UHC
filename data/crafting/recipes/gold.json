@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#C#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:raw_gold"
+        },
+        "C": {
+            "item": "minecraft:charcoal"
+        }
+    },
+    "result": {
+        "item": "minecraft:gold_ingot",
+        "count": 8
+    },
+    "group": "uhc"
+}
