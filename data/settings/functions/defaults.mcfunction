@@ -3,7 +3,7 @@ scoreboard players set UHC$settings uhc_border 1000
 scoreboard players set UHC$settings uhc_timetodeath 300
 scoreboard players set UHC$settings uhc_ai 1
 scoreboard players set UHC$settings uhc_enchants 1
-scoreboard players set UHC$settings uhc_naturalregen 1
+scoreboard players set UHC$settings uhc_naturalregen 0
 scoreboard players set UHC$settings uhc_autosmelt 0
 
 scoreboard players set UHC$settings uhc_speed 1
@@ -18,6 +18,8 @@ scoreboard players set UHC$settings uhc_iron 0
 scoreboard players set UHC$settings uhc_book 1
 scoreboard players set UHC$settings uhc_tnt 0
 scoreboard players set UHC$settings uhc_fortunebook 0
+scoreboard players set UHC$settings uhc_nether 1
+scoreboard players set UHC$settings uhc_fullbright 1
 
 ## defaults
 # finish

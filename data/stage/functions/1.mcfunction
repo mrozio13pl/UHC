@@ -32,7 +32,7 @@ time set 10
 
 #effects
 effect give @a slowness 10 100 true
-effect give @a minecraft:jump_boost 10 255 true
+effect give @a jump_boost 10 128 true
 effect give @a minecraft:blindness 5 4 true
 effect give @a mining_fatigue 10 100 true
 

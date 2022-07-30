@@ -17,6 +17,8 @@ effect give @a resistance 1000000 10 true
 effect give @a speed 1000000 1 true
 effect give @a saturation 1000000 1 true
 clear @a
+xp set @a 0 points
+xp set @a 0 levels
 scoreboard objectives setdisplay sidebar uhc_wins
 
 schedule clear stage:2
@@ -26,7 +28,7 @@ kill @e[type=armor_stand,name="uhc_center"]
 teleport @a 0 255 0
 
 tellraw @a {"text":"UHC has ended!","color":"yellow"}
-tellraw @a ["",{"text":"[","color":"yellow"},{"text":"Setup","color":"gold","clickEvent":{"action":"run_command","value":"/function slow:slowsetup"}},{"text":"] [","color":"yellow"},{"text":"Start Game","color":"gold","clickEvent":{"action":"run_command","value":"/function slow:slowstart"}},{"text":"] [","color":"yellow"},{"text":"Stop Game","color":"gold","clickEvent":{"action":"run_command","value":"/function slow:slowstop"}},{"text":"] [","color":"yellow"},{"text":"Settings","color":"gold","clickEvent":{"action":"run_command","value":"/function settings:open"}},{"text":"]","color":"yellow"}]
+tellraw @a ["",{"text":"\u27A4 ","color":"aqua"},{"text":"OPEN MENU","color":"dark_aqua","clickEvent":{"action":"run_command","value":"/function uhc:menu"}}]
 
 execute positioned as @a run playsound block.stone_button.click_off ambient @a ~ ~ ~ 
 

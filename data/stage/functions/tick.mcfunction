@@ -1,15 +1,23 @@
 #triggers
-scoreboard players enable @a[gamemode=adventure] uhc_start
+scoreboard players enable @a[tag=triggers_permission] uhc_start
 execute as @p[scores={uhc_start=1..}] at @s run function stage:1
-scoreboard players enable @a[gamemode=spectator] uhc_end
+scoreboard players enable @a[tag=triggers_permission] uhc_end
 execute as @p[scores={uhc_end=1..}] at @s run function stage:end
-scoreboard players enable @a[gamemode=adventure] uhc_settings
+scoreboard players enable @a[tag=triggers_permission] uhc_settings
 execute as @p[scores={uhc_settings=1..}] at @s run function settings:open
-scoreboard players enable @a uhc_uninstall
+scoreboard players enable @a[tag=triggers_permission] uhc_uninstall
 execute as @p[scores={uhc_uninstall=1..}] at @s run function uninstall:confirm
 execute as @p[scores={uhc_uninstall=1..}] at @s run scoreboard players set @s uhc_uninstall 0
 execute as @p[scores={uhc_confirm=1..}] at @s run function uninstall:check
 
+execute as @a[tag=!triggers_permission] run trigger uhc_start add 0
+execute as @a[tag=!triggers_permission] run trigger uhc_end add 0
+execute as @a[tag=!triggers_permission] run trigger uhc_settings add 0
+execute as @a[tag=!triggers_permission] run trigger uhc_uninstall add 0
+execute as @a[tag=!triggers_permission] run trigger uhc_menu add 0
+
+scoreboard players enable @a[tag=triggers_permission] uhc_menu
+execute as @p[scores={uhc_menu=1..}] at @s run function uhc:menu
 
 # CountDown Setup
 scoreboard players add $timer UHC_Start_Timer_CountDown 1

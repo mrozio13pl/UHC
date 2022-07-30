@@ -4,6 +4,7 @@ scoreboard objectives add uhc_kills playerKillCount
 scoreboard objectives add uhc_start trigger
 scoreboard objectives add uhc_end trigger
 scoreboard objectives add uhc_settings trigger
+scoreboard objectives add uhc_menu trigger
 scoreboard objectives add uhc_uninstall trigger
 
 ###dummies
@@ -32,6 +33,8 @@ scoreboard objectives add uhc_iron dummy
 scoreboard objectives add uhc_book dummy
 scoreboard objectives add uhc_tnt dummy
 scoreboard objectives add uhc_fortunebook dummy
+scoreboard objectives add uhc_nether dummy
+scoreboard objectives add uhc_fullbright dummy
 
 #detail
 setworldspawn 0 255 0

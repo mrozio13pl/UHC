@@ -37,6 +37,7 @@ scoreboard objectives remove uhc_kills
 scoreboard objectives remove uhc_start
 scoreboard objectives remove uhc_end 
 scoreboard objectives remove uhc_settings
+scoreboard objectives remove uhc_menu
 scoreboard objectives remove uhc_Leader 
 scoreboard objectives remove uhc_chest 
 scoreboard objectives remove uhc_wins
@@ -57,6 +58,8 @@ scoreboard objectives remove uhc_iron
 scoreboard objectives remove uhc_book
 scoreboard objectives remove uhc_tnt
 scoreboard objectives remove uhc_fortunebook
+scoreboard objectives remove uhc_nether
+scoreboard objectives remove uhc_fullbright
 scoreboard objectives remove uhc_defaults
 scoreboard objectives remove uhc_stage1
 scoreboard objectives remove uhc_stage2

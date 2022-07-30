@@ -25,3 +25,11 @@ execute if score UHC$settings uhc_enchants matches 1 run enchant @a efficiency 4
 execute if score UHC$settings uhc_autosmelt matches 1 run function smelting:smelt
 # ex unless
 execute unless score UHC$settings uhc_defaults matches 1 run function settings:defaults
+# nether
+execute if score UHC$settings uhc_nether matches 0 positioned as @a as @s if block ~ ~ ~ nether_portal run fill ~ ~ ~ ~ ~ ~ air replace nether_portal
+execute if score UHC$settings uhc_nether matches 0 positioned as @a as @a if block ~-1 ~ ~ nether_portal run fill ~-1 ~ ~ ~-1 ~ ~ air replace nether_portal
+execute if score UHC$settings uhc_nether matches 0 positioned as @a as @a if block ~1 ~ ~ nether_portal run fill ~1 ~ ~ ~1 ~ ~ air replace nether_portal
+execute if score UHC$settings uhc_nether matches 0 positioned as @a as @a if block ~ ~ ~1 nether_portal run fill ~ ~ ~1 ~ ~ ~1 air replace nether_portal
+execute if score UHC$settings uhc_nether matches 0 positioned as @a as @a if block ~ ~ ~-1 nether_portal run fill ~ ~ ~-1 ~ ~ ~-1 air replace nether_portal
+# fullbright
+execute if score UHC$settings uhc_fullbright matches 1 run effect give @a minecraft:night_vision 15 1 true
